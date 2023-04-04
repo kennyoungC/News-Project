@@ -5,12 +5,14 @@ const MyNavbar = () => {
   return (
     <div className=" bg-red-800">
       <div className="container mx-auto py-2 px-2 flex justify-between  items-center">
-        <h1 className="text-2xl text-white inline-flex items-center">
-          CAPENEWS{" "}
-          <span>
-            <img className="w-16  " src={logo} alt="" />
-          </span>
-        </h1>
+        <Link to={"/"}>
+          <h1 className="text-2xl text-white inline-flex items-center">
+            CAPENEWS{" "}
+            <span>
+              <img className="w-16  " src={logo} alt="" />
+            </span>
+          </h1>
+        </Link>
         <div className="flex gap-9">
           <Link to="/details" className="text-white">
             Hot Topic
