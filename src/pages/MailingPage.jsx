@@ -22,7 +22,7 @@ const MailingPage = () => {
         <form>
           <div className="flex flex-col ">
             <label
-              htmlFor="email"
+              htmlhtmlFor="email"
               className="block text-sm font-normal leading-6 text-gray-900"
             >
               Email

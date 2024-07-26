@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Article from "../components/Article"
 import HotTopics from "../components/HotTopics"
 import Mailing from "../components/Mailing"

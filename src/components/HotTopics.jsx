@@ -1,6 +1,9 @@
 import React from "react"
 import sophiaImg from "./../assets/Sophia.png"
 import { Link } from "react-router-dom"
+
+import hotTopic from "../hot_topic.json"
+
 const HotTopics = () => {
   return (
     <div
@@ -18,7 +21,7 @@ const HotTopics = () => {
           lineHeight: "56px",
         }}
       >
-        HOT TOPIC!
+        {hotTopic.title}!
       </h1>
       <div className="mb-3 flex gap-7 justify-center items-center px-8">
         <img
@@ -34,11 +37,11 @@ const HotTopics = () => {
                 lineHeight: "45px",
               }}
             >
-              SAUDI ARABIA HAS GRATED SOPHIA THE AI CITIZENSHIP?.
+              {hotTopic.description}
             </p>
           </Link>
-          <p className="text-sm ">AND WHY THIS MATTERS FOR HUMANS</p>
-          <span className="mt-9 ">Angie Adelaide</span>
+          <p className="text-sm ">{hotTopic.subTitle}</p>
+          <span className="mt-9 ">{hotTopic.author}</span>
         </div>
       </div>
     </div>
